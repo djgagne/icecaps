@@ -1,0 +1,35 @@
+html, body {
+    background-color: #800000;
+    color: #FFFFFF;
+}
+
+select {
+    height: 20px;
+    background: #600000;
+    color: #FFFFFF;
+    border-style: hidden;
+}
+
+#logo {
+    height: 40px;
+    float: left;
+    padding: 5px;
+}
+
+#menubar_date {
+    top: 0px;
+    height: 75px;
+    min-width: 800px;
+    width: 95%;
+    margin: 5px;
+    padding: 5px;
+}
+
+#map_canvas {
+    left: 2%;
+    width: 98%;
+    height: 80vh;
+    margin: 0; 
+    padding: 0;
+}
+
