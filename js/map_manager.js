@@ -35,6 +35,8 @@ function setMapOverlay()
     var getString = makeGetString(options);
     xmlhttp.open("GET","php/get_image_filename.php" + getString,true);
     xmlhttp.send();
+    updateColorbar();
+    
 }
 
 function getOptionValues()
@@ -59,6 +61,14 @@ function makeGetString(options)
     }
     return getString;
 }
+
+function updateColorbar() {
+    varSelect = document.getElementById("variable");
+    var_value = varSelect.options[varSelect.selectedIndex].value;
+    img_str = "http://www.caps.ou.edu/~djgagne/web_images/colorbars/" + var_value + "_cbar.png";
+    document.getElementById("cbar_image").src = img_str;
+}
+
 var map;
 var dataOverlay = null;
 google.maps.event.addDomListener(window, 'load', initializeMap);

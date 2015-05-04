@@ -11,6 +11,8 @@
     </head>
     <body>
         <div id="menubar_date"><?php initialize_menubar_date(); ?></div>
-        <div id="map_canvas"></div>
+        <div id="map_canvas">
+        </div>
+        <div id="colorbar"><img id="cbar_image" src="http://www.caps.ou.edu/~djgagne/web_images/colorbars/uh_max_cbar.png" /></div>
     </body>
 </html>

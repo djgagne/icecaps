@@ -33,3 +33,12 @@ select {
     padding: 0;
 }
 
+#colorbar {
+    position: fixed;
+    top: 80%; 
+    left: 5%;
+}
+
+#cbar_image {
+    width: 500px;
+}
